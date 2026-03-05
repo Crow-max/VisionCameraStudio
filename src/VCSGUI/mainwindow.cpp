@@ -15,6 +15,7 @@ MainWindow::MainWindow(QWidget* parent)
     , m_pErrorInfoLabel(new QLabel(""))
 {
     ui->setupUi(this);
+    // TODO: 菜单栏和工具栏后续补充
 
     ui->ControlWidget->layout()->addWidget(m_pControlWidget);
     ui->ParamWidget->layout()->addWidget(m_pParamWidget);
