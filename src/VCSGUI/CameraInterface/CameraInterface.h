@@ -13,7 +13,6 @@
 // CameraInterface：相机抽象接口类
 // ============================================================
 class CameraInterface {
-// TODO: 补充更多虚函数接口
 public:
     // 注意：构造时不连接相机，只保存标识信息
     CameraInterface(const CameraMetaInfo& info)
