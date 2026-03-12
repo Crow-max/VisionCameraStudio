@@ -37,7 +37,8 @@ void CameraContext::Release()
     }
 }
 
-CameraContext::CameraContext()
+CameraContext::CameraContext
+    // TODO: 完善错误处理()
 {
 }
 
