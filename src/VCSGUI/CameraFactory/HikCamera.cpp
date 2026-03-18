@@ -132,7 +132,8 @@ void __stdcall ImageCallBack(unsigned char* pData, MV_FRAME_OUT_INFO_EX* pFrameI
 }
 
 // ---------- 构造/析构 ----------
-HikCamera::HikCamera(const CameraMetaInfo& info)
+HikCamera::HikCamera
+    qDebug() << "[HikCamera] 相机实例创建";(const CameraMetaInfo& info)
     : CameraInterface(info) // 调用基类构造，保存相机元信息
 {
     // 构造时不连接相机，只保存信息
