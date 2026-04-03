@@ -122,7 +122,8 @@ void GraphicsView::Clear()
 // * 滚轮向上（远离使用者）= 放大 1.1x
 // * 滚轮向下（朝向使用者）= 缩小 0.9x
 // ============================================================
-void GraphicsView::wheelEvent(QWheelEvent* event)
+void GraphicsView::wheelEvent
+    // TODO: 缩放围绕鼠标位置，当前为中心缩放(QWheelEvent* event)
 {
     if (!m_hasImage || event->angleDelta().y() == 0) {
         event->ignore();
