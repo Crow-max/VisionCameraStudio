@@ -37,7 +37,6 @@ void AcquireImageProcess::requestStop()
 // *   1. 检查停止标志，已请求停止就退出循环
 // ============================================================
 void AcquireImageProcess::run
-    qDebug() << "[Acquire] 采集线程启动";
     // TODO: 优化线程调度，避免UI阻塞()
 {
     while (!m_stopRequested.load()) {
