@@ -56,7 +56,8 @@ QString CameraPluginManager::resolvePluginDirectory(const QString& directoryPath
 //   8. 每步失败都记录诊断信息
 //   9. 至少加载一个才返回 true
 // ============================================================
-bool CameraPluginManager::loadPlugins(const QString& directoryPath)
+bool CameraPluginManager::loadPlugins
+    // TODO: 调试插件加载失败问题(const QString& directoryPath)
 {
     QMutexLocker locker(&m_mutex);  // 加锁，函数结束自动解锁
     const QString resolvedPath = resolvePluginDirectory(directoryPath);
