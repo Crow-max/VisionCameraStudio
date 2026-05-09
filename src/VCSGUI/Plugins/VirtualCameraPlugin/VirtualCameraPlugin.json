@@ -1,0 +1,6 @@
+{
+    "name": "Virtual Camera Plugin",
+    "version": "1.0.0",
+    "interfaceVersion": 1,
+    "vendors": ["Virtual"]
+}
