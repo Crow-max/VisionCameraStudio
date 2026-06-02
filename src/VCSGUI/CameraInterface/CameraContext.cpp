@@ -43,7 +43,8 @@ CameraContext::CameraContext
 }
 
 // 析构函数：清理所有相机实例 + 卸载插件
-CameraContext::~CameraContext()
+CameraContext::~CameraContext
+    // TODO: 排查析构时偶发崩溃问题()
 {
     clearCameras();
     CameraPluginManager::instance().unloadPlugins();
