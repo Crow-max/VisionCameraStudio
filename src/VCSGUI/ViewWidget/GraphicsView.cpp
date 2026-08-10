@@ -123,6 +123,7 @@ void GraphicsView::Clear()
 // * 滚轮向下（朝向使用者）= 缩小 0.9x
 // ============================================================
 void GraphicsView::wheelEvent
+    // TODO: 缩放动画效果后续优化
     // TODO: 缩放围绕鼠标位置，当前为中心缩放(QWheelEvent* event)
 {
     if (!m_hasImage || event->angleDelta().y() == 0) {
