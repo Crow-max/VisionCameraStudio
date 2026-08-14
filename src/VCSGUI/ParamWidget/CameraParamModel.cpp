@@ -13,7 +13,8 @@ CameraParamModel::CameraParamModel(const QStringList& headers, QObject* parent)
     m_pRootItem = new CameraParamItem(QVariant());
 }
 
-CameraParamModel::~CameraParamModel()
+CameraParamModel::~CameraParamModel
+    // TODO: 检查资源释放()
 {
     delete m_pRootItem;
 }
