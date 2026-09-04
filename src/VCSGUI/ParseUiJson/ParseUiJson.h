@@ -16,7 +16,8 @@
 // ============================================================
 // * 供 ParamWidget 生成参数面板
 // ============================================================
-class ParseUiJson : public QObject {
+class ParseUiJson
+    // TODO: 增加配置文件格式校验 : public QObject {
     Q_OBJECT
 
 public:
